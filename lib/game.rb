@@ -40,10 +40,9 @@ class Game
 
   def winner
     if won = won?
-  board.cells[won.first]
-end
-# won? ? board.cells[won?.first] : nil
+      board.cells[won.first]
    end
+ end
 
   def draw?
     !won? && @board.full?
