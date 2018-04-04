@@ -27,19 +27,10 @@ class Board
     cells.all? {|cell| cell != " "}
   end
 
-  # def turn_count
-  #   turns = 0
-  #   @cells.each do |cell|
-  #     if cell != " "
-  #       turns += 1 #counting number of input
-  #     end
-  #   end
-  #   turns
-  # end
 
   def turn_count
-cells.count { |cell| cell == "X" || cell == "O" }
-end
+    cells.count { |cell| cell == "X" || cell == "O" }
+   end
 
   def taken?(spot)
     self.position(spot) == " " ? false : true
