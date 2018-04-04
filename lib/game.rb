@@ -43,7 +43,7 @@ class Game
   board.cells[won.first]
 end
 # won? ? board.cells[won?.first] : nil
-#   end
+   end
 
   def draw?
     !won? && @board.full?
