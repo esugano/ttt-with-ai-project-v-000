@@ -30,7 +30,7 @@ class Board
 
   def turn_count
     cells.count { |cell| cell == "X" || cell == "O" }
-   end
+  end
 
   def taken?(spot)
     self.position(spot) == " " ? false : true
