@@ -24,7 +24,7 @@ class Board
   end
 
   def full?
-    @cells.include?(" ") ? false : true
+    cells.all? {|cell| cell != " "}
   end
 
   def turn_count
